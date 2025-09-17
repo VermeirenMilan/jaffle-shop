@@ -9,7 +9,6 @@ COPY profiles.yml /usr/app/profiles.yml
 COPY packages.yml /usr/app/packages.yml
 COPY dbt_project.yml /usr/app/dbt_project.yml
 
-# RUN python3 -m venv .venv/dbt
 # RUN source .venv/dbt/bin/activate
 
 RUN apt get update && apt install -y git-all
